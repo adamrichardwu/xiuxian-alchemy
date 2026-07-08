@@ -1,0 +1,23 @@
+# Godot
+.godot/
+*.import
+*.godot/
+
+# Build outputs
+export/
+build/
+
+# IDE
+.vs/
+.vscode/
+*.sln
+*.csproj
+
+# OS junk
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Temp
+*.tmp
+*.log

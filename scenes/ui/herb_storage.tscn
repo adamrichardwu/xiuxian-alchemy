@@ -1,0 +1,5 @@
+﻿[gd_scene format=3 uid="uid://placeholder"]
+
+[ext_resource type="PackedScene" path="res://herb_storage"]
+
+[node name="herb_storage" type="Control"]

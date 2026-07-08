@@ -1,0 +1,5 @@
+﻿[gd_scene format=3 uid="uid://placeholder"]
+
+[ext_resource type="PackedScene" path="res://realm_breakthrough"]
+
+[node name="realm_breakthrough" type="Control"]

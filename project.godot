@@ -1,0 +1,10 @@
+﻿; Engine configuration file.
+; It's best edited using the editor UI and not directly.
+
+[application]
+config/name="XiuXian Alchemy"
+config/description="A narrative alchemy-cultivation game"
+config/version="0.1.0"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
