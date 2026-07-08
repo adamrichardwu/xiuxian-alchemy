@@ -22,6 +22,10 @@ for ($i = 1; $i -le $MaxRetries; $i++) {
     if ($completed) {
         $output = Receive-Job $job
         $exitCode = $job.ChildJobs[0].ExitCode
+        # git push writes success to stderr; check for "Everything up-to-date" or "new branch"
+        if ($output -match "Everything up-to-date|new branch.*->" -and $exitCode -ne 0) {
+            $exitCode = 0
+        }
     } else {
         Stop-Job $job
         $output = "TIMEOUT after ${TimeoutSeconds}s"
