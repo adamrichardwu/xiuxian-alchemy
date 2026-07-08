@@ -1,6 +1,15 @@
-﻿# HeartDemonScene - Breakthrough narrative mini-scene
+# HeartDemonScene - Breakthrough narrative controller
 extends Control
 
-func start_scene(realm: int, character_history: Dictionary):
-	# TODO: Present heart demon narrative choice
-	pass
+var heart_demon_choices: Array = []
+var on_choice_made: Callable
+
+func start(choices: Array, callback: Callable):
+	heart_demon_choices = choices
+	on_choice_made = callback
+	visible = true
+
+func _on_choice_selected(index: int):
+	visible = false
+	if on_choice_made.is_valid():
+		on_choice_made.call(index)

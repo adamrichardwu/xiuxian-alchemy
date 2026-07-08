@@ -1,1 +1,1 @@
-﻿{ "events": [] }
+{"events":[{"id":"ev_day1_intro","trigger":"day_start:1","text":["你在山镇边缘的这间破旧丹房里醒来。窗外是层层叠叠的青山，屋内只有一个旧铜炉、几味廉价的药材，和一个未知的明天。","你被逐出宗门已经三个月了。修为被打回练气期，丹道感悟却还在——这是你仅剩的东西。","今天，丹房的门被敲响了。是镇上的老猎户沈伯。他左臂的绷带渗着血，血里带着一股淡淡的紫黑色妖气。","他说：小师傅，帮我看看吧。"],"choices":[{"text":"接诊，查看伤口","outcome":"begin_commission:ch1_hunter_wound"},{"text":"先问清楚伤口怎么来的","outcome":"begin_commission:ch1_hunter_wound","flags":["asked_about_wound"]}]}]}
